@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória Matemático</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="imagex/png" href="logo.png">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Jogo da Memória Matemático</h1>
+
+    <div class="controls">
+      <label for="difficulty">Dificuldade:</label>
+      <select id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Médio</option>
+        <option value="hard">Difícil</option>
+      </select>
+      <button onclick="startGame()">Iniciar Jogo</button>
+    </div>
+
+    <div class="info">
+      <span id="moves">Movimentos: 0</span>
+      <span id="timer">Tempo: 0s</span>
+    </div>
+
+    <div class="memory-board" id="memory-board"></div>
+
+    <div id="endMessage" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F8D794; /* Creased Khaki */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  width: 95%;
+  padding: 20px;
+  background-color: #284139; /* Emerald Green */
+  color: #F8D794; /* Creased Khaki */
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #B86830; /* Egyptian Earth */
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.memory-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #809076; /* Wasabi */
+  color: transparent;
+  font-size: 1.5em;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.card.revealed {
+  color: #111A19; /* Noir de Vigne */
+  background-color: #F8D794; /* Creased Khaki */
+}
+
+.card.matched {
+  background-color: #4CAF50;
+  color: white;
+  cursor: default;
+}
+
+.info {
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+.hidden {
+  display: none;
+}
+
+#endMessage {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #B86830; /* Egyptian Earth */
+}
